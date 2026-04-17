@@ -47,7 +47,7 @@ Examine the provided Ansible Playbook named `playbook.yml`. Either open the file
 * `cat` -- Linux command allowing us to view file contents
 * `playbook.yml` -- provided Ansible Playbook
 
-We will explore in detail the components of an Ansible Playbook in the next exercise. It is suffice for now to see that this playbook will run two Cisco IOS-XE commands:
+We will explore in detail the components of an Ansible Playbook in the next exercise. It is suffice for now to see that this playbook will run 2 Cisco IOS-XE commands:
 
 [source,bash]
 ----
@@ -59,7 +59,7 @@ snmp-server community ansible-private RW
 
 Run the playbook using the `ansible-navigator` command. The full command is:
 
-[source,bash]
+[source,role="execute"]
 ----
 ansible-navigator run playbook.yml --mode stdout
 ----

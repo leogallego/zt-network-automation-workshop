@@ -61,7 +61,7 @@ As you can see in the output above there is no VLAN configuration outside of the
 * Create a new file in Visual Studio Code named `resource.yml`
 
 // TODO: Copy image from ansible-workshops/exercises/ansible_network/4-resource-module/images/step1_blank_file.png
-image::step1_blank_file.png[New file in VS Code,align="center",link=self,window=blank,width=600]
+image::step1_new_file.png[New file in VS Code,align="center",link=self,window=blank,width=600]
 
 * Copy the following Ansible Playbook into your `resource.yml`
 
@@ -148,7 +148,7 @@ Only two of these parameters will be covered in this exercise, but additional ar
 
 * Execute the playbook using the `ansible-navigator run`. Since there is just one task we can use the `--mode stdout`
 
-[source,bash]
+[source,role="execute"]
 ----
 $ ansible-navigator run resource.yml --mode stdout
 ----
@@ -234,7 +234,7 @@ vlan 50
    name DMZ
 ----
 
-As you can see, the resource module configured the Arista EOS network device with the supplied configuration. There are now five total VLANs (including the default VLAN 1).
+As you can see, the resource module configured the Arista EOS network device with the supplied configuration. There are now 5 total VLANs (including the default VLAN 1).
 
 == Step 6: Use the gathered parameter
 
@@ -267,13 +267,13 @@ As you can see, the resource module configured the Arista EOS network device wit
 
 * The `| to_nice_yaml` is a link:https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html[filter^], that will transform the JSON output (default) to YAML.
 
-* The `playbook_dir` and `inventory_hostname` are special variables also referred to as link:https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html[magic variables^]. The `playbook_dir` simply means the directory we executed the playbook from, and the `inventory_hostname` is the name of the device in our inventory. This means the file will be saved as `~/network-workshop/rtr2_vlan.yml` and `~/network-workshop/rtr4_vlan.yml` for the two Arista devices.
+* The `playbook_dir` and `inventory_hostname` are special variables also referred to as link:https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html[magic variables^]. The `playbook_dir` simply means the directory we executed the playbook from, and the `inventory_hostname` is the name of the device in our inventory. This means the file will be saved as `~/network-workshop/rtr2_vlan.yml` and `~/network-workshop/rtr4_vlan.yml` for the 2 Arista devices.
 
 == Step 7: Execute the gathered playbook
 
 * Execute the playbook using the `ansible-navigator run`.
 
-[source,bash]
+[source,role="execute"]
 ----
 $ ansible-navigator run gathered.yml --mode stdout
 ----
@@ -303,7 +303,7 @@ rtr4                       : ok=2    changed=1    unreachable=0    failed=0    s
 
 * Open the newly created files that `gathered` the VLAN configuration from the Arista network devices.
 
-* The two files were saved to `~/network-workshop/rtr2_vlan.yml` and `~/network-workshop/rtr4_vlan.yml` for the two Arista devices.
+* The two files were saved to `~/network-workshop/rtr2_vlan.yml` and `~/network-workshop/rtr4_vlan.yml` for the 2 Arista devices.
 
 * Here is a screenshot:
 
