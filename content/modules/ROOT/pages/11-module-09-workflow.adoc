@@ -213,5 +213,5 @@ At any time during the workflow job you can select an individual job template by
 In this module, you successfully:
 
 * Created a **Workflow template** that creates a backup, then attempts to create a user and banner for all network nodes
-* Made the workflow **robust** -- if either job template fails it will restore to the specified backup
+* Made the workflow **resilient** -- if either job template fails it will restore to the specified backup
 * Launched the Workflow template and explored the **Workflow Visualizer**

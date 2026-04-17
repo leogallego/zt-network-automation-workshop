@@ -83,7 +83,7 @@ Navigate to the `network-workshop` directory on the Ansible control node termina
 
 Run the `ansible-navigator` command with the `images` argument to look at execution environments configured on the control node:
 
-[source,bash]
+[source,role="execute"]
 ----
 $ ansible-navigator images
 ----
@@ -107,7 +107,7 @@ image::navigator-ee-collections.png[EE collections info,align="center",link=self
 
 Either use Visual Studio Code to open or use the `cat` command to view the contents of the `ansible-navigator.yml` file. The file is located in the home directory:
 
-[source,bash]
+[source,role="execute"]
 ----
 $ cat ~/.ansible-navigator.yml
 ----
@@ -145,7 +145,7 @@ The scope of a `play` within a `playbook` is limited to the groups of hosts decl
 
 In this lab you will work with a file based inventory written in the **ini** format. Either use Visual Studio Code to open or use the `cat` command to view the contents of the `~/lab_inventory/hosts` file.
 
-[source,bash]
+[source,role="execute"]
 ----
 $ cat ~/lab_inventory/hosts
 ----
@@ -253,11 +253,11 @@ image::ansible-navigator-rtr-1.png[ansible-navigator host,align="center",link=se
 
 == Step 8: Connecting to network devices
 
-There are four routers, named rtr1, rtr2, rtr3 and rtr4. The SSH configuration file (`~/.ssh/config`) is already setup on the control node. This means you can SSH to any router from the control node without a login:
+There are 4 routers, named rtr1, rtr2, rtr3 and rtr4. The SSH configuration file (`~/.ssh/config`) is already setup on the control node. This means you can SSH to any router from the control node without a login:
 
 For example to connect to rtr1 from the Ansible control node, type:
 
-[source,bash]
+[source,role="execute"]
 ----
 $ ssh rtr1
 ----

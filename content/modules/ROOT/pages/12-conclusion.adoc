@@ -1,0 +1,42 @@
+= Workshop conclusion
+
+Congratulations on completing the Ansible Network Automation Workshop!
+
+== What you learned
+
+Throughout this workshop, you progressed from command-line automation fundamentals to building production-ready workflows in Ansible Automation Platform.
+
+=== Command-line automation (Modules 1--4)
+
+* Explored the lab environment, `ansible-navigator`, execution environments, and inventory structure
+* Executed your first Ansible Playbook to configure SNMP community strings on Cisco IOS-XE devices
+* Validated idempotency and used check mode to preview changes before applying them
+* Gathered structured facts from network devices using the `cisco.ios.ios_facts` module
+* Used network resource modules (`arista.eos.eos_vlans`) for vendor-agnostic, idempotent VLAN configuration
+* Used the `gathered` state to read existing configuration and export it as structured data
+
+=== Automation Platform (Modules 5--9)
+
+* Navigated the Ansible Automation Platform web interface -- inventories, projects, and credentials
+* Created and launched job templates for network configuration backup
+* Built self-service surveys to collect user input for job template variables
+* Configured Role Based Access Control (RBAC) to delegate automation safely across teams
+* Designed automation workflows with conditional execution and automated rollback on failure
+
+== Next steps
+
+* Explore the supplemental exercises for advanced topics like network resource module states (`replaced`, `overridden`, `deleted`)
+* Try automating additional network tasks: interface configuration, routing protocols, ACLs
+* Investigate dynamic inventory sources to replace static inventory files
+* Set up scheduled jobs in Automation Platform to run configuration compliance checks automatically
+
+== References
+
+* link:https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/latest[Red Hat Ansible Automation Platform documentation^]
+* link:https://docs.ansible.com/ansible/latest/network/index.html[Ansible Network Automation documentation^]
+* link:https://github.com/network-automation/toolkit[Workshop toolkit repository^]
+* link:https://github.com/ansible/ansible-navigator[ansible-navigator^]
+* link:https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html[Ansible glossary^]
+* link:https://docs.ansible.com/ansible/latest/collections/cisco/ios/index.html[cisco.ios collection^]
+* link:https://docs.ansible.com/ansible/latest/collections/arista/eos/index.html[arista.eos collection^]
+* link:https://docs.ansible.com/ansible/latest/collections/junipernetworks/junos/index.html[junipernetworks.junos collection^]

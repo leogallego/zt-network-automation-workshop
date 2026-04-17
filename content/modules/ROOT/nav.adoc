@@ -14,3 +14,5 @@
 * xref:09-module-07-survey.adoc[Module 7: Surveys]
 * xref:10-module-08-rbac.adoc[Module 8: RBAC]
 * xref:11-module-09-workflow.adoc[Module 9: Workflows]
+
+* xref:12-conclusion.adoc[Workshop conclusion]
